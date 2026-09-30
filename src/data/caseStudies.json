@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "call-status-resolution-engine",
+    "label": "Work case study · VakeelSaab",
+    "title": "Call-Status Resolution Engine",
+    "problem": "The operations team kept reporting “calls auto-disconnecting”. Telephony webhooks arrived in three incompatible schema versions, sometimes twice, sometimes out of order, and business logic was silently overwriting telephony state.",
+    "approach": "Analysed real Exotel call data against a single resolution engine, found 13 production bugs, and replaced ad-hoc handling with one direction-, duration- and DB-aware enum plus a two-stage verification pipeline (sync webhook + async V3 API) and a reconciliation cron.",
+    "result": "False disconnect reports stopped. Status is eventually accurate even when webhook delivery fails.",
+    "metrics": [
+      { "value": "13", "label": "bugs fixed" },
+      { "value": "20+", "label": "statuses mapped" },
+      { "value": "0", "label": "false reports after" },
+      { "value": "2-stage", "label": "verification" }
+    ],
+    "tags": ["NestJS", "Sequelize", "Redis", "Exotel", "Cron"],
+    "url": ""
+  },
+  {
+    "slug": "inbound-router-race",
+    "label": "Work case study · VakeelSaab",
+    "title": "Killing a double-assignment race",
+    "problem": "A poll-driven inbound call router occasionally assigned the same call to two agents under load.",
+    "approach": "Three layered defenses: an atomic conditional UPDATE agent claim, a guarded assignment write, and a Redis SET NX per-call single-flight lock with cached-response replay. Verified with a harness firing 10 simultaneous claimers against real MySQL.",
+    "result": "Zero double assignments. Redis loss degrades to the DB claim instead of failing.",
+    "metrics": [
+      { "value": "3", "label": "layered defenses" },
+      { "value": "10", "label": "concurrent claimers tested" },
+      { "value": "0", "label": "double assignments" },
+      { "value": "graceful", "label": "Redis-loss degradation" }
+    ],
+    "tags": ["MySQL", "Redis", "Concurrency", "Idempotency"],
+    "url": ""
+  }
+]

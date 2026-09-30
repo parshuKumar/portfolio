@@ -1,0 +1,6 @@
+[
+  { "value": 1, "prefix": "~", "suffix": " yr", "label": "in production backend", "decimals": 0 },
+  { "value": 20, "suffix": "+", "label": "REST APIs shipped" },
+  { "value": 13, "label": "production bugs found & fixed" },
+  { "value": 480, "suffix": "+", "label": "LeetCode problems solved" }
+]

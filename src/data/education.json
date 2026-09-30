@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mca",
+    "degree": "Master of Computer Applications (MCA)",
+    "school": "Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)",
+    "location": "New Delhi",
+    "start": "Jul 2024",
+    "end": "Jun 2026",
+    "score": "CGPA 8.6 / 10",
+    "detail": "Affiliated with GGSIPU. Data Structures, Algorithms, OOP, DBMS, Operating Systems, Computer Networks."
+  },
+  {
+    "id": "bca",
+    "degree": "Bachelor of Computer Applications (BCA)",
+    "school": "Indira Gandhi National Open University (IGNOU)",
+    "location": "Delhi",
+    "start": "Jul 2020",
+    "end": "Jun 2023",
+    "score": "",
+    "detail": "Foundation in data structures, DBMS, operating systems and software engineering."
+  },
+  {
+    "id": "xii",
+    "degree": "Class XII · Science with Computer Science",
+    "school": "NP Co-Ed. Sr. Sec. School (CBSE)",
+    "location": "Delhi",
+    "start": "Apr 2019",
+    "end": "Mar 2020",
+    "score": "",
+    "detail": ""
+  }
+]

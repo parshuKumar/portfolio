@@ -1,0 +1,6 @@
+[
+  { "icon": "trophy", "title": "480+ LeetCode problems", "detail": "max contest rating 1592", "url": "https://leetcode.com/u/Parshuram01/" },
+  { "icon": "code", "title": "136+ GeeksforGeeks problems", "detail": "DSA practice", "url": "https://www.geeksforgeeks.org/" },
+  { "icon": "package", "title": "Published npm package", "detail": "prod-alert-sentry · ~500 alerts/day in production", "url": "https://www.npmjs.com/package/prod-alert-sentry" },
+  { "icon": "award", "title": "Add a certification here", "detail": "e.g. AWS Cloud Practitioner, NestJS Fundamentals", "url": "", "placeholder": true }
+]

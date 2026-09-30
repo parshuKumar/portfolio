@@ -1,0 +1,39 @@
+[
+  {
+    "id": "vakeelsaab-asd",
+    "role": "Associate Software Developer",
+    "company": "VakeelSaab",
+    "companyUrl": "https://www.vakeelsaab.com",
+    "location": "New Delhi",
+    "type": "Full-time",
+    "start": "Mar 2026",
+    "end": "Present",
+    "summary": "Owner of call-status reliability and the search / statistics APIs on a NestJS microservices stack for a legal-consultation call platform.",
+    "bullets": [
+      "Designed a unified call-status resolution engine mapping 20+ Exotel telephony statuses across V1/V2/V3 webhook formats into a 10-value internal enum, with direction-, duration- and database-aware resolution logic.",
+      "Identified and fixed 13 production bugs from real call data (duplicate-webhook races, V2/V3 field mismatches, business logic overwriting telephony status), eliminating false “calls auto-disconnecting” reports that had blocked the operations team.",
+      "Killed a production double-assignment race in the inbound call router with an atomic conditional UPDATE claim, a guarded assignment write and a Redis SET NX single-flight lock, verified with a harness firing 10 simultaneous claimers against real MySQL.",
+      "Built a two-stage verification pipeline (synchronous webhook + async V3 API) with defense-in-depth (cleanup cron, delayed reconciliation) so status stays accurate despite unreliable webhook delivery.",
+      "Cut SearchCalls API latency ~50% by parallelizing sequential DB and enrichment calls; built a Call-Logs Statistics API 4× faster than the previous client-side aggregation of 1,000+ records."
+    ],
+    "skills": ["Node.js", "NestJS", "TypeScript", "Microservices", "Sequelize", "TypeORM", "MySQL", "Redis", "Slack API", "Exotel"]
+  },
+  {
+    "id": "vakeelsaab-intern",
+    "role": "Software Developer Intern",
+    "company": "VakeelSaab",
+    "companyUrl": "https://www.vakeelsaab.com",
+    "location": "New Delhi",
+    "type": "Internship",
+    "start": "Dec 2025",
+    "end": "Feb 2026",
+    "summary": "Shipped APIs across several microservices and the first GenAI feature in the backend.",
+    "bullets": [
+      "Developed 20+ REST APIs across user, lawyer-appointment, finance and doc-server microservices covering profile, scheduling and earnings flows.",
+      "Built an audio-transcription service integrating the Google Gemini 2.5 Flash API to convert call audio to text within the Node.js backend.",
+      "Configured API Gateway routing in vs-gateway with JWT auth middleware and segregated microservice routes for cleaner service boundaries.",
+      "Built an iCalendar (.ics) generation service in Python/FastAPI with S3 storage, integrated into the appointment-scheduling flow."
+    ],
+    "skills": ["Node.js", "NestJS", "Fastify", "Python", "FastAPI", "TypeORM", "SQL", "Gemini API", "AWS S3"]
+  }
+]

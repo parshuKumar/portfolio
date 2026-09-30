@@ -1,0 +1,20 @@
+{
+  "intro": "Have a role, a project, or a question about my work? Email is the fastest way to reach me. I usually reply within a day.",
+  "info": [
+    { "icon": "briefcase", "label": "Looking for", "value": "Backend, full-stack or AI developer roles (Node.js, TypeScript, Python)" },
+    { "icon": "map-pin", "label": "Work mode", "value": "New Delhi · Hybrid · Remote" },
+    { "icon": "clock", "label": "Notice period", "value": "Add your notice period here" },
+    { "icon": "globe", "label": "Languages", "value": "English, Hindi" }
+  ],
+  "freelance": {
+    "title": "Freelance & contract",
+    "detail": "Available for short projects and retainers: APIs, integrations, AI features, performance fixes. Share the scope and I will reply with an estimate.",
+    "cta": "Discuss a project"
+  },
+  "availabilityNote": "Full-time backend roles. Can start after notice period.",
+  "form": {
+    "title": "Send a message",
+    "successMessage": "Thanks! Your message is on its way. I will reply soon.",
+    "errorMessage": "Something went wrong. Please email me directly instead."
+  }
+}

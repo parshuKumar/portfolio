@@ -1,0 +1,37 @@
+{
+  "intro": "I am a",
+  "roles": [
+    "Software Developer",
+    "Backend Developer (Node.js / NestJS)",
+    "TypeScript & JavaScript Developer",
+    "Python Developer (FastAPI)",
+    "AI / LLM Integration Developer",
+    "Full-Stack Developer (Next.js)"
+  ],
+  "hireMeFor": [
+    {
+      "icon": "server",
+      "title": "Backend & API development",
+      "description": "REST APIs, microservices, auth, background jobs and integrations in Node.js, NestJS, Express, Fastify or FastAPI.",
+      "audience": "companies & clients"
+    },
+    {
+      "icon": "sparkles",
+      "title": "AI features for your product",
+      "description": "RAG over your documents, transcription, summarisation and LLM workflows with Gemini, Claude or OpenAI, with cost and rate limits under control.",
+      "audience": "startups & freelance"
+    },
+    {
+      "icon": "database",
+      "title": "Database & performance work",
+      "description": "Schema design, indexing, query optimisation and caching on MySQL, PostgreSQL, MongoDB and Redis. Slow endpoints made fast.",
+      "audience": "companies & clients"
+    },
+    {
+      "icon": "layout",
+      "title": "Full-stack web apps",
+      "description": "Next.js front ends wired to solid backends, deployed on Vercel or AWS with CI/CD from day one.",
+      "audience": "freelance"
+    }
+  ]
+}

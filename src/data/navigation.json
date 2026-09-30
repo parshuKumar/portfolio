@@ -1,0 +1,8 @@
+{
+  "tabs": [
+    { "id": "about", "label": "About", "href": "/" },
+    { "id": "resume", "label": "Resume", "href": "/resume" },
+    { "id": "projects", "label": "Projects", "href": "/projects" },
+    { "id": "contact", "label": "Contact", "href": "/contact" }
+  ]
+}

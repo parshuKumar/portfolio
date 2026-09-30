@@ -1,0 +1,94 @@
+{
+  "categories": ["All", "Backend", "AI", "Web app", "npm package"],
+  "items": [
+    {
+      "slug": "chat-with-pdf",
+      "title": "Chat with PDF",
+      "category": "AI",
+      "year": "2025",
+      "featured": true,
+      "image": "",
+      "summary": "RAG document QA with source citations. Upload a PDF, ask questions, get streamed answers.",
+      "description": "800-token chunking, Gemini embeddings, cosine similarity in pgvector on PostgreSQL, token-streaming responses, a provider-agnostic model layer, input validation and rate limiting.",
+      "tags": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "pgvector", "Gemini"],
+      "links": {
+        "github": "https://github.com/parshuKumar/chatwithpdf",
+        "live": "https://chatwithpdf-sigma.vercel.app/"
+      }
+    },
+    {
+      "slug": "prod-alert-sentry",
+      "title": "Prod-Alert-Sentry",
+      "category": "npm package",
+      "year": "2025",
+      "featured": true,
+      "image": "",
+      "summary": "Error-monitoring package for Node services, pushing ~500 alerts a day to Slack in production.",
+      "description": "Event-driven architecture with retry logic, severity routing, context enrichment and structured log rotation. Cut debugging turnaround ~70% for the team that runs it.",
+      "tags": ["Node.js", "TypeScript", "Slack API", "npm"],
+      "links": {
+        "github": "https://github.com/parshuKumar/prod-alert-sentry",
+        "npm": "https://www.npmjs.com/package/prod-alert-sentry"
+      }
+    },
+    {
+      "slug": "campusmatch",
+      "title": "CampusMatch",
+      "category": "Backend",
+      "year": "2025",
+      "featured": true,
+      "image": "/images/projects/campusmatch.png",
+      "summary": "Real-time social networking backend with REST APIs and Socket.IO chat.",
+      "description": "11 REST APIs plus real-time chat with JWT cookie authentication, bcrypt, middleware validation, indexed and paginated MongoDB queries with projections and $nin filtering, persistent messages and CI/CD via GitHub Actions.",
+      "tags": ["Node.js", "Express", "MongoDB", "Socket.IO", "GitHub Actions"],
+      "links": {
+        "github": "https://github.com/parshuKumar/campusMatch",
+        "live": "https://campusmatch.vercel.app/"
+      }
+    },
+    {
+      "slug": "bookmylawyer",
+      "title": "BookMyLawyer",
+      "category": "Web app",
+      "year": "2024",
+      "featured": false,
+      "image": "/images/projects/bookmylawyer.png",
+      "summary": "Lawyer discovery and appointment booking for clients and lawyers.",
+      "description": "Two-sided app: clients search and book, lawyers manage availability and appointments. Authentication, search and scheduling flows.",
+      "tags": ["React", "Node.js", "Express", "MongoDB"],
+      "links": {
+        "github": "https://github.com/parshuKumar/BookMyLawyer",
+        "live": "https://bookmylawyer.vercel.app/"
+      }
+    },
+    {
+      "slug": "swiggy-api-clone",
+      "title": "Swiggy API Clone",
+      "category": "Web app",
+      "year": "2025",
+      "featured": false,
+      "image": "/images/projects/swiggyapi.png",
+      "summary": "Food-ordering front end driven by live Swiggy APIs.",
+      "description": "Restaurant listing, menus, cart and search built on live public APIs with a Redux store.",
+      "tags": ["React", "Redux", "Tailwind CSS"],
+      "links": {
+        "github": "https://github.com/parshuKumar/SwiggyAPIclone",
+        "live": "https://parshu-swiggy.netlify.app/"
+      }
+    },
+    {
+      "slug": "nike-landing",
+      "title": "Nike Landing Page",
+      "category": "Web app",
+      "year": "2025",
+      "featured": false,
+      "image": "/images/projects/nike-landing.png",
+      "summary": "Responsive product landing page.",
+      "description": "Pixel-focused responsive landing page built with React and Tailwind CSS.",
+      "tags": ["React", "Tailwind CSS"],
+      "links": {
+        "live": "https://parshu-nike.netlify.app/"
+      }
+    }
+  ]
+}

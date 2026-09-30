@@ -1,0 +1,32 @@
+{
+  "name": "Parshuram Kumar",
+  "firstName": "Parshuram",
+  "initials": "PK",
+  "headline": "Software Developer",
+  "tagline": "I build backends that stay correct when things go wrong.",
+  "avatar": "/images/avatar.jpg",
+  "email": "parshuramkumarsde@gmail.com",
+  "phone": "+91 85957 25118",
+  "phoneHref": "tel:+918595725118",
+  "location": "New Delhi, India",
+  "timezone": "IST (UTC+5:30)",
+  "company": "VakeelSaab",
+  "companyUrl": "https://www.vakeelsaab.com",
+  "workingSince": "Dec 2025",
+  "resumeUrl": "/resume.pdf",
+  "availability": {
+    "status": "open",
+    "label": "Open to work & freelance"
+  },
+  "bio": [
+    "I'm Parshuram Kumar, a software developer based in New Delhi. I work as an Associate Software Developer at VakeelSaab, a legal-tech platform, where I own call-status reliability and the search and statistics APIs across a NestJS microservices stack.",
+    "I like problems with real data behind them: telephony webhooks that arrive out of order, queries slower than they need to be, services that must agree with each other. I also build with LLMs (RAG on Postgres, Gemini transcription) and ship side projects in Next.js and Python.",
+    "I hold an MCA from BVICAM (CGPA 8.6) and a BCA from IGNOU, and keep my problem-solving sharp with 480+ LeetCode problems."
+  ],
+  "socials": [
+    { "id": "github", "label": "GitHub", "url": "https://github.com/parshuKumar" },
+    { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/parshuramkumar/" },
+    { "id": "leetcode", "label": "LeetCode", "url": "https://leetcode.com/u/Parshuram01/" },
+    { "id": "npm", "label": "npm", "url": "https://www.npmjs.com/package/prod-alert-sentry" }
+  ]
+}

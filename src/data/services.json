@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "server",
+    "title": "Backend APIs & microservices",
+    "description": "NestJS / Express services with clean boundaries, gateway routing, JWT auth and Swagger docs."
+  },
+  {
+    "icon": "database",
+    "title": "Database design & performance",
+    "description": "MySQL, PostgreSQL, MongoDB, Redis. Indexing, pagination, parallel aggregation, ORMs."
+  },
+  {
+    "icon": "zap",
+    "title": "Reliability & debugging",
+    "description": "Webhook races, reconciliation crons, verification pipelines. I read real data before I fix."
+  },
+  {
+    "icon": "sparkles",
+    "title": "AI & LLM integration",
+    "description": "RAG with pgvector, Gemini transcription, provider-agnostic model layers with streaming and rate limits."
+  },
+  {
+    "icon": "cloud",
+    "title": "Integrations & DevOps",
+    "description": "Exotel telephony, Slack API, S3, Docker, Kubernetes, GitHub Actions CI/CD."
+  },
+  {
+    "icon": "layout",
+    "title": "Full-stack delivery",
+    "description": "Next.js and React front ends on top of the backend, shipped on Vercel with SEO and analytics."
+  }
+]

@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------
+   Design tokens. Dark is the default look; light is opt-in via
+   <html data-theme="light">. Change the accent here to re-theme the site.
+   ------------------------------------------------------------------ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0c0e13;
+  --bg-elevated: #10131a;
+  --card: #151922;
+  --card-2: #1b2030;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #eef1f6;
+  --muted: #9aa3b5;
+  --muted-2: #6f788c;
+  --accent: #f4b942;
+  --accent-rgb: 244 185 66;
+  --accent-ink: #0c0e13;
+  --accent-soft: rgba(244, 185, 66, 0.14);
+  --teal: #3ed6b5;
+  --teal-rgb: 62 214 181;
+  --danger: #ff6b6b;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --radius: 24px;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f5f8;
+  --bg-elevated: #ffffff;
+  --card: #ffffff;
+  --card-2: #f2f4f8;
+  --border: rgba(15, 20, 30, 0.08);
+  --border-strong: rgba(15, 20, 30, 0.16);
+  --text: #12151c;
+  --muted: #5b6474;
+  --muted-2: #8791a3;
+  --accent: #d99a12;
+  --accent-rgb: 217 154 18;
+  --accent-ink: #12151c;
+  --accent-soft: rgba(217, 154, 18, 0.14);
+  --teal: #0e9f84;
+  --teal-rgb: 14 159 132;
+  --shadow: 0 20px 50px rgba(20, 30, 50, 0.12);
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-card: var(--card);
+  --color-card-2: var(--card-2);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --radius-card: var(--radius);
+  --shadow-card: var(--shadow);
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-blink: blink 1s steps(2) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-dot: pulse-dot 2s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes blink {
+  to { opacity: 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(var(--teal-rgb) / 0.55); }
+  70% { box-shadow: 0 0 0 8px rgb(var(--teal-rgb) / 0); }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ambient glow behind the page. Purely decorative. */
+.bg-ambient {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image:
+    radial-gradient(900px 500px at 8% -10%, rgb(var(--accent-rgb) / 0.14), transparent 60%),
+    radial-gradient(700px 400px at 100% 0%, rgb(var(--teal-rgb) / 0.08), transparent 60%);
+}
+
+/* Spotlight card: JS sets --mx / --my on hover. */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgb(var(--accent-rgb) / 0.12),
+    transparent 45%
+  );
+}
+.spotlight:hover::before {
+  opacity: 1;
+}
+
+/* Thin custom scrollbar (WebKit) */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--card-2); border-radius: 999px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-track { background: transparent; }
+
+::selection {
+  background: rgb(var(--accent-rgb) / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

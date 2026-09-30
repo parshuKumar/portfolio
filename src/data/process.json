@@ -1,0 +1,7 @@
+[
+  { "step": "Understand the real data", "detail": "logs, call records, traces, not assumptions" },
+  { "step": "Design the flow", "detail": "states, failure modes, idempotency" },
+  { "step": "Build with tests", "detail": "harnesses against real DBs, not mocks" },
+  { "step": "Ship behind checks", "detail": "feature flags, CI, staged rollout" },
+  { "step": "Monitor & reconcile", "detail": "alerts, cleanup crons, audit trails" }
+]

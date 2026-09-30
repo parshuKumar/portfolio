@@ -1,0 +1,16 @@
+[
+  {
+    "quote": "Replace this with a real recommendation from your manager or tech lead at VakeelSaab. Two or three lines about ownership, debugging and delivery work best.",
+    "name": "Your Tech Lead",
+    "role": "Tech Lead · VakeelSaab",
+    "initials": "TL",
+    "placeholder": true
+  },
+  {
+    "quote": "Replace this with a recommendation from a colleague, client or professor. Ask on LinkedIn and paste the text here with their permission.",
+    "name": "A Colleague",
+    "role": "Senior Engineer · VakeelSaab",
+    "initials": "SE",
+    "placeholder": true
+  }
+]

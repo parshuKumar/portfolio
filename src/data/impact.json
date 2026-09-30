@@ -1,0 +1,22 @@
+[
+  {
+    "metric": "−50%",
+    "title": "SearchCalls API latency",
+    "detail": "parallelized sequential DB and enrichment calls on the highest-traffic endpoint"
+  },
+  {
+    "metric": "4×",
+    "title": "faster call-log statistics",
+    "detail": "collapsed 15+ dashboard queries to 2 with reusable bucket SQL"
+  },
+  {
+    "metric": "20+ → 10",
+    "title": "telephony statuses unified",
+    "detail": "V1/V2/V3 Exotel webhooks resolved into one internal enum"
+  },
+  {
+    "metric": "0",
+    "title": "double-assigned calls",
+    "detail": "atomic DB claim + Redis SET NX single-flight lock, verified with 10 concurrent claimers"
+  }
+]

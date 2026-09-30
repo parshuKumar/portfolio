@@ -1,0 +1,72 @@
+{
+  "logoProvider": "https://skillicons.dev/icons?i={id}&theme=dark",
+  "logos": [
+    { "id": "ts", "name": "TypeScript" },
+    { "id": "js", "name": "JavaScript" },
+    { "id": "nodejs", "name": "Node.js" },
+    { "id": "nestjs", "name": "NestJS" },
+    { "id": "express", "name": "Express" },
+    { "id": "python", "name": "Python" },
+    { "id": "fastapi", "name": "FastAPI" },
+    { "id": "cpp", "name": "C++" },
+    { "id": "mysql", "name": "MySQL" },
+    { "id": "postgres", "name": "PostgreSQL" },
+    { "id": "mongodb", "name": "MongoDB" },
+    { "id": "redis", "name": "Redis" },
+    { "id": "prisma", "name": "Prisma" },
+    { "id": "react", "name": "React" },
+    { "id": "nextjs", "name": "Next.js" },
+    { "id": "tailwind", "name": "Tailwind CSS" },
+    { "id": "docker", "name": "Docker" },
+    { "id": "kubernetes", "name": "Kubernetes" },
+    { "id": "aws", "name": "AWS" },
+    { "id": "githubactions", "name": "GitHub Actions" },
+    { "id": "jenkins", "name": "Jenkins" },
+    { "id": "git", "name": "Git" },
+    { "id": "github", "name": "GitHub" },
+    { "id": "postman", "name": "Postman" },
+    { "id": "linux", "name": "Linux" },
+    { "id": "vercel", "name": "Vercel" }
+  ],
+  "groups": [
+    {
+      "name": "Languages",
+      "items": ["TypeScript", "JavaScript (Node.js)", "Python", "SQL", "C / C++"]
+    },
+    {
+      "name": "Backend",
+      "items": ["Express", "NestJS", "Fastify", "FastAPI", "REST APIs", "Microservices", "API Gateway", "JWT / RBAC", "Socket.IO", "Cron Jobs", "Swagger / OpenAPI"]
+    },
+    {
+      "name": "Systems",
+      "items": ["Distributed locking", "Concurrency control", "Idempotency", "Background jobs", "Feature flags", "Webhook reconciliation"]
+    },
+    {
+      "name": "Data",
+      "items": ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Sequelize", "TypeORM", "Prisma", "Index & query design"]
+    },
+    {
+      "name": "AI",
+      "items": ["LLM integration (Gemini, Claude, OpenAI)", "RAG", "pgvector", "Prompt versioning", "Token / cost accounting"]
+    },
+    {
+      "name": "Frontend",
+      "items": ["React", "Next.js (App Router)", "Tailwind CSS", "Zustand", "SWR"]
+    },
+    {
+      "name": "Infra & tools",
+      "items": ["Docker", "Kubernetes", "AWS S3", "GitHub Actions", "Jenkins", "New Relic", "Git", "Bitbucket", "Jira", "Postman"]
+    }
+  ],
+  "highlighted": ["TypeScript", "Express", "NestJS", "MySQL", "PostgreSQL", "Redis", "RAG", "Next.js (App Router)", "Docker"],
+  "proficiency": [
+    { "name": "Node.js / NestJS", "percent": 90 },
+    { "name": "TypeScript / JavaScript", "percent": 88 },
+    { "name": "MySQL / PostgreSQL", "percent": 82 },
+    { "name": "Redis & concurrency", "percent": 75 },
+    { "name": "Python / FastAPI", "percent": 65 },
+    { "name": "AI / LLM integration", "percent": 70 },
+    { "name": "React / Next.js", "percent": 65 },
+    { "name": "Docker / Kubernetes", "percent": 60 }
+  ]
+}

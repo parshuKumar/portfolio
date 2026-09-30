@@ -1,0 +1,23 @@
+[
+  {
+    "id": "leetcode",
+    "name": "LeetCode",
+    "handle": "Parshuram01",
+    "stat": "480+ solved · max contest rating 1592",
+    "url": "https://leetcode.com/u/Parshuram01/"
+  },
+  {
+    "id": "gfg",
+    "name": "GeeksforGeeks",
+    "handle": "",
+    "stat": "136+ problems solved",
+    "url": "https://www.geeksforgeeks.org/"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "handle": "parshuKumar",
+    "stat": "18 public repos · open-source npm package",
+    "url": "https://github.com/parshuKumar"
+  }
+]
